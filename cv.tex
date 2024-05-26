@@ -44,12 +44,12 @@
 
 % Section formatting
 \titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large
+    \vspace{-5pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Subsection formatting
 \titleformat{\subsection}{
-  \vspace{-4pt}\scshape\raggedright\large
+    \vspace{-4pt}\scshape\raggedright\large
 }{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -72,92 +72,107 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
     \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{University of Edinburgh} & June 2017 \\
-      \textit{\small BSc Theoretical Physics} & \textit{\small 2:1 (69\%)} \\
+        \textbf{University of Edinburgh} & June 2017 \\
+        \textit{\small BSc Theoretical Physics} & \textit{\small 2:1 (69\%)} \\
     \end{tabular*}
 \end{itemize}
+
 
 % -------------------- WORK EXPERIENCE --------------------
 \section{Employment}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \item
     \begin{minipage}[t]{0.75\linewidth}
-      \textbf{Altruistiq} $|$ Sustainability \\
+        \textbf{Altruistiq} $|$ Sustainability \\
     \end{minipage} \hfill \textit{\small May 2022 -- Present} \\
     \vspace{-7pt}
     \textit{\small Senior Lead Data Scientist}
     \vspace{-7pt}
     \begin{itemize}[label={\tiny\textbullet}]
-      \item
+        \item
         \begin{minipage}[t]{0.75\linewidth}
-          \item\small 
-            Semi-automated PDF data extraction using a pipeline 
-            of models for clustering, grouping, multi-label multi-class 
-            classification and text extraction.
-          \item\small 
-            Developed a ChatGPT-based tool to help analysts navigate complex PDFs in multiple languages 
-            using a privately hosted Llama2 13b model for data privacy.
-        \end{minipage}
+            \item\small 
+                Semi-automated PDF data extraction using a pipeline 
+                of models for clustering, grouping, multi-label multi-class 
+                classification and text extraction deployed in AWS Sagemaker.
+            \item\small
+                Designed the level 4 MLOps architecture including: 
+                experimentation and model benchmarking;
+                model versioning; model release; data versioning using a 
+                feature store; data pipelining; and model monitoring and 
+                automatic model retraining. This was done using MLflow,
+                AWS Sagemaker, Github Actions and Metabase.
+            \item\small
+                Developed and led the code development for my team's
+                codebase and internal tooling, including all 
+                DevOps for library releases across the company and the 
+                terraform for any infrastructure required.
+            \item\small 
+                Developed and deployed a ChatGPT-based Streamlit app
+                to enable analysts to navigate PDFs in multiple
+                languages using a privately hosted Llama-2-13b model for 
+                data privacy.
+            \end{minipage}
     \end{itemize}
 
     \item
     \textit{\small Lead Data Scientist}
     \vspace{-7pt}
     \begin{itemize}[label={\tiny\textbullet}]
-      \item
-        \begin{minipage}[t]{0.75\linewidth}
-          \item\small 
-            As the first data science hire scoped out a cross-company data science project backlog and
-            implemented our MLflow, Sagemaker, Github Actions and Metabase MLOps
-            and model monitoring stack, including all infrastructure required
-            on AWS using Terraform.
-          \item\small 
-            Developed a vector-based retrieval algorithm using BERT embeddings
-            for automating the tagging of customer data.
-          \item\small 
-            Researched representing our tag hierarcy as a knowledge graph, 
-            comparing an RDF and Apache TinkerPop property graph deployed on
-            AWS Neptune.
-          
-        \end{minipage}
+        \item
+            \begin{minipage}[t]{0.75\linewidth}
+                \item\small
+                    Worked with product managers to break down complex data science
+                    and ML project requirements into a clear backlog that could
+                    be managed in sprint cycles by non-technical managers
+                    and be prioritised against other ongoing company projects.
+                \item\small 
+                    Developed and deployed a vector-based retrieval algorithm 
+                    using BERT embeddings for automating the tagging of 
+                    customer data.
+                \item\small 
+                    Researched representing the current tag hierarcy as a
+                    knowledge graph, comparing an RDF and Apache TinkerPop 
+                    property graph deployed on AWS Neptune.
+            \end{minipage}
     \end{itemize}\vspace{0.2cm}
 
     \item
     \begin{minipage}[t]{0.75\linewidth}
-      \textbf{Lloyds Banking Group} $|$ Financial Services \\
+        \textbf{Lloyds Banking Group} $|$ Financial Services \\
     \end{minipage} \hfill \textit{\small Sep 2018 -- May 2022} \\
     \vspace{-7pt}
     \textit{\small Data Scientist}
     \vspace{-7pt}
     \begin{itemize}[label={\tiny\textbullet}]
-      \item
-        \begin{minipage}[t]{0.75\linewidth}
-          \item\small
-            Developed a novelty detection algorithm using the CluStream framework as part of the bank's
-            insider criminal threat detection project.
-          \item\small
-            Authored and supported a Data Science Masters project at the 
-            University of Edinburgh, focusing on utilising Bayesian Neural Networks 
-            for anomaly detection.
-        \end{minipage}
+        \item
+            \begin{minipage}[t]{0.75\linewidth}
+                \item\small
+                    Developed a novelty detection algorithm in Azure using the CluStream framework as part of the bank's
+                    insider criminal threat detection project.
+                \item\small
+                    Authored and supported a Data Science Masters project at the 
+                    University of Edinburgh, focusing on utilising Bayesian Neural Networks 
+                    for anomaly detection.
+            \end{minipage}
     \end{itemize}
 
     \item
     \textit{\small Cognitive Data Science Manager}
     \vspace{-7pt}
     \begin{itemize}[label={\tiny\textbullet}]
-      \item
-        \begin{minipage}[t]{0.75\linewidth}
-          \item\small
-            Developed and embedded a topic modelling tool using unsupervised LDA topic models
-            for identifying emerging themes in customer vulnerability documents, resulting in successful 
-            identification of OOS climate change risks.
-        \end{minipage}
+        \item
+            \begin{minipage}[t]{0.75\linewidth}
+                \item\small
+                    Developed and embedded a topic modelling tool using unsupervised LDA topic models
+                    for identifying emerging themes in customer vulnerability documents, resulting in successful 
+                    identification of OOS climate change risks.
+            \end{minipage}
     \end{itemize}\vspace{0.2cm}
   
     \item
     \begin{minipage}[t]{0.75\linewidth}
-      \textbf{BP} $|$ Oil \& Gas \\
+        \textbf{BP} $|$ Oil \& Gas \\
     \end{minipage} \hfill \textit{\small Sep 2017 -- Jun 2018} \\
     \vspace{-7pt}
     \textit{\small Supply and Trading Market Intelligence Analyst (Graduate)}
@@ -169,21 +184,21 @@
 
 \section{Publications}
 \begin{itemize}[leftmargin=0.2in, label={}]
-  \item 
-    \begin{minipage}[t]{0.75\linewidth}
-        Thompson, S., Teixeira-Dias, F., Paulino, M., \& Hamilton, A. \\
-        \textit{Predictions on multi-class terminal ballistics datasets using conditional Generative Adversarial Networks.} \\
-        Neural Networks, 154, 425-440.
-    \end{minipage} \hfill \textit{2022}
+    \item 
+        \begin{minipage}[t]{0.75\linewidth}
+            Thompson, S., Teixeira-Dias, F., Paulino, M., \& Hamilton, A. \\
+            \textit{Predictions on multi-class terminal ballistics datasets using conditional Generative Adversarial Networks.} \\
+            Neural Networks, 154, 425-440.
+        \end{minipage} \hfill \textit{2022}
 \end{itemize}
 
 \begin{itemize}[leftmargin=0.2in, label={}]
   \item
-  \begin{minipage}[t]{0.75\linewidth}
-      Thompson, S., Teixeira-Dias, F., Paulino, M., \& Hamilton, A. \\
-      \textit{Ballistic response of armour plates using Generative Adversarial Networks.} \\
-      Defence Technology, 18(9), 1513-1522.
-  \end{minipage} \hfill \textit{2022}
+      \begin{minipage}[t]{0.75\linewidth}
+          Thompson, S., Teixeira-Dias, F., Paulino, M., \& Hamilton, A. \\
+          \textit{Ballistic response of armour plates using Generative Adversarial Networks.} \\
+          Defence Technology, 18(9), 1513-1522.
+      \end{minipage} \hfill \textit{2022}
 \end{itemize}
 
 
