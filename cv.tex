@@ -1,5 +1,6 @@
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage{nccmath}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -55,7 +56,8 @@
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-% -------------------- START OF DOCUMENT --------------------
+
+%text -------------------- START OF DOCUMENT --------------------
 \begin{document}
 
 % -------------------- HEADING--------------------
@@ -73,12 +75,12 @@
     \item 
         \begin{minipage}[t]{1.0\linewidth}
             Having spent the past two years building a data science function
-            from scratch at a successful sustainability start-up,
+            from scratch at a successful sustainability start-up, with a previous
+            five years' experience in finance, risk and cybersecurity,
             I am now looking for a new challenge where I can continue to apply
-            my skills building state-of-the-art machine learning solutions with
-            a group of like-minded colleagues.
-            Outside of work I enjoy playing my piano, gaming and whatever niche
-            hobby I have at the time.
+            my skills building state-of-the-art machine learning solutions. \\
+            Outside of work I enjoy playing my piano, gaming and 
+            whatever niche hobby I have at the time.
         \end{minipage}
 \end{itemize}
 
@@ -87,9 +89,15 @@
 \begin{itemize}[leftmargin=0.2in, label={}]
     \item 
         \begin{minipage}[t]{1.0\linewidth}
-            AWS, GCP, Azure, Python, SQL, pandas, NumPy, scikit-learn, Hugging 
-            Face, PyTorch, Bash, Sagemaker, VertexAI, MLflow, 
-            Weights and Biases, Terraform, Github Actions
+            \begin{tabbing}
+            \textbf{Languages:}  \=Python, SQL, Terraform, Bash \\
+            \textbf{Cloud:}\>AWS, GCP, Azure, Sagemaker, VertexAI, 
+            Azure Machine Learning \\
+            \textbf{Packages:}\>pandas, NumPy, scikit-learn, Hugging
+            Face, PyTorch, matplotlib, nltk, LangChain \\
+            \textbf{Ops:}\>MLflow, Weights and Biases, Github, 
+            Github Actions
+            \end{tabbing} 
         \end{minipage}
 \end{itemize}
 
@@ -119,7 +127,7 @@
         \item
         \begin{minipage}[t]{0.75\linewidth}
             \item\small 
-                Semi-automated PDF data extraction using a pipeline 
+                Semi-automated our PDF data extraction using a pipeline 
                 of models for clustering, grouping, multi-label multi-class 
                 classification and text extraction, with human-in-the-loop
                 to safely deal with any corrections. The full process had a
@@ -193,7 +201,11 @@
                     300k in costs.
             \end{minipage}
     \end{itemize}\vspace{0.2cm}
-  
+
+\end{itemize}
+
+\section{Employment \textit{(Continued)}}
+\begin{itemize}[leftmargin=0.15in, label={}]
     \item
     \begin{minipage}[t]{0.75\linewidth}
         \textbf{BP} $|$ Oil \& Gas \\
@@ -201,9 +213,7 @@
     \vspace{-7pt}
     \textit{\small Supply and Trading Market Intelligence Analyst (Graduate)}
     \vspace{-7pt}\vspace{0.2cm}
-
 \end{itemize}
-
 % -------------------- PUBLICATIONS --------------------
 
 \section{Publications}
