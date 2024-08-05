@@ -3,4 +3,4 @@ all:
 	open cv.pdf &
 
 clean:
-	rm -f *.aux *.log *.toc *.blg *.out *.fls *.fdb_latexmk
+	rm -f *.aux *.log *.toc *.blg *.out *.fls *.fdb_latexmk *.synctex.gz
