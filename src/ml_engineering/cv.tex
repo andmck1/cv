@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{nccmath}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+    \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+%text -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Alastair Hamilton} \\
+    \textit{\small +44 0770 775 1450 $|$ alastair.amhamilton@icloud.com $|$ Dual British-Irish Citizenship}
+    \vspace{8pt} 
+\end{center}
+
+% -------------------- SUMMARY --------------------
+\section{Summary}
+\begin{itemize}[leftmargin=0.2in, label={}]
+    \item 
+        \begin{minipage}[t]{1.0\linewidth}
+            I am a dedicated and innovative data science and machine learning 
+            professional with nearly a decade of experience in finance, risk,
+            cybersecurity and sustainability.  Over the past two years I have 
+            successfully built a robust data science function from the ground 
+            up at a sucessful start-up and am now keen to embrace a new 
+            challenge where I can continue to use my expertise in developing 
+            state-of-the-art machine learning solutions. 
+
+            In my spare time I enjoy
+            playing my piano, gaming and whatever niche hobby I have at the time.
+        \end{minipage}
+\end{itemize}
+
+% -------------------- TECH STACK -------------------
+\section{Tech Stack}
+\begin{itemize}[leftmargin=0.2in, label={}]
+    \item 
+        \begin{minipage}[t]{1.0\linewidth}
+            \begin{tabbing}
+            \textbf{Languages:}  \=Python, SQL, Terraform, Bash \\
+            \textbf{Cloud:}\>AWS, GCP, Azure, Sagemaker, VertexAI, 
+            Azure Machine Learning \\
+            \textbf{Packages:}\>pandas, NumPy, scikit-learn, Transformers,
+            PyTorch, matplotlib, nltk, LangChain \\
+            \textbf{Ops:}\>MLflow, Weights and Biases, Github, 
+            Github Actions
+            \end{tabbing} 
+        \end{minipage}
+\end{itemize}
+
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{University of Edinburgh} & June 2017 \\
+        \textit{\small BSc Theoretical Physics} & \textit{\small 2:1 (69\%)} \\
+    \end{tabular*}
+\end{itemize}
+
+
+% -------------------- WORK EXPERIENCE --------------------
+\section{Employment}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item
+    \begin{minipage}[t]{0.75\linewidth}
+        \textbf{Altruistiq} $|$ Sustainability \\
+    \end{minipage} \hfill \textit{\small May 2022 -- Present} \\
+    \vspace{-7pt}
+        \textit{\small Lead Data Scientist $\rightarrow$ Senior Lead Data Scientist}
+    \vspace{-7pt}
+    \begin{itemize}[label={\tiny\textbullet}]
+        \item
+        \begin{minipage}[t]{0.75\linewidth}
+            \item\small 
+                Automated our tagging process for incoming customer data using
+                a custom search algorithm combining BM25 ranking,
+                vector search, cross-encoder reranking and cluster-based
+                reordering, where the embedding and cross-encoder models were
+                fine-tuned SOTA LLMs hosted on GPU infrastructure. The algorithm 
+                had a top-1 accuracy of 11\% and a top-30 accuracy of 34\%,
+                enabling our tagging process to become a review process, 
+                generating revenue through boosts in productivity.
+            \item\small 
+                Semi-automated our PDF data extraction using a pipeline 
+                of models for clustering, grouping, multi-label multi-class 
+                classification and text extraction, with human-in-the-loop
+                to safely deal with any corrections. The full process had a
+                baseline KPI of $\sim$50\% accuracy and removed the need for technical
+                engineers, saving the business $\sim$£172,000/year.
+            \item\small
+                Coded all models, MLOps, DevOps, infrastructure and 
+                internal tooling for my team. This includes our MLOps architecture
+                for model versioning, model release, data versioning, data 
+                pipelining, and model monitoring.
+            \item\small
+                Worked with product managers to break down complex data science
+                and ML project requirements into a clear backlog that could
+                be managed in sprint cycles by non-technical managers
+                and be prioritised against other ongoing company projects.
+            \end{minipage}
+    \end{itemize}
+
+    \vspace{0.2cm}
+
+    \item
+    \begin{minipage}[t]{0.75\linewidth}
+        \textbf{Lloyds Banking Group} $|$ Financial Services \\
+    \end{minipage} \hfill \textit{\small Sep 2018 -- May 2022} \\
+    \vspace{-7pt}
+    \textit{\small Cognitive Data Science Manager $\rightarrow$ Data Scientist}
+    \vspace{-7pt}
+    \begin{itemize}[label={\tiny\textbullet}]
+        \item
+            \begin{minipage}[t]{0.75\linewidth}
+                \item\small
+                    Developed a vector-based retrieval search engine as a
+                    replacement for an FAQ Risk chatbot, avoiding 
+                    $\sim$£300k in costs.
+                \item\small
+                    Developed and embedded a topic modelling tool using 
+                    unsupervised LDA topic models for identifying emerging 
+                    themes in customer vulnerability documents, resulting in 
+                    the successful identification of OOS climate change risks.
+                \item\small
+                    Developed a novelty detection algorithm using the CluStream 
+                    framework as part of the bank's insider criminal threat 
+                    detection project.
+                \item\small
+                    Authored and supported a Data Science Masters project at the 
+                    University of Edinburgh, focusing on utilising Bayesian 
+                    Neural Networks for anomaly detection.
+            \end{minipage}
+    \end{itemize}
+
+    \vspace{0.2cm}
+
+\end{itemize}
+
+\section{Employment \textit{(Continued)}}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item
+    \begin{minipage}[t]{0.75\linewidth}
+        \textbf{BP} $|$ Oil \& Gas \\
+    \end{minipage} \hfill \textit{\small Sep 2017 -- Jun 2018} \\
+    \vspace{-7pt}
+    \textit{\small Supply and Trading Market Intelligence Analyst (Graduate)}
+    \vspace{-7pt}\vspace{0.2cm}
+\end{itemize}
+% -------------------- PUBLICATIONS --------------------
+
+\section{Publications}
+\begin{itemize}[leftmargin=0.2in, label={}]
+    \item 
+        \begin{minipage}[t]{0.75\linewidth}
+            Thompson, S., Teixeira-Dias, F., Paulino, M., \& Hamilton, A. \\
+            \textit{Predictions on multi-class terminal ballistics datasets using conditional Generative Adversarial Networks.} \\
+            Neural Networks, 154, 425-440.
+        \end{minipage} \hfill \textit{2022}
+\end{itemize}
+
+\begin{itemize}[leftmargin=0.2in, label={}]
+  \item
+      \begin{minipage}[t]{0.75\linewidth}
+          Thompson, S., Teixeira-Dias, F., Paulino, M., \& Hamilton, A. \\
+          \textit{Ballistic response of armour plates using Generative Adversarial Networks.} \\
+          Defence Technology, 18(9), 1513-1522.
+      \end{minipage} \hfill \textit{2022}
+\end{itemize}
+
+
+\end{document}
+
